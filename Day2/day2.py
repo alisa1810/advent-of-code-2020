@@ -26,7 +26,6 @@ def find_number_of_valid_2(lines_list):
 
     for line in lines_list:
         first_place, second_place, character, password = get_password_policy(line)
-        password = list(password)
 
         if (password[first_place - 1] == character and not password[second_place - 1] == character) or (
                 not password[first_place - 1] == character and password[second_place - 1] == character):
