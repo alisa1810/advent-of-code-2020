@@ -1,10 +1,10 @@
 def get_password_policy(line):
-    lines = line.split()
-    conditions = lines[0].split('-')
+    entries = line.split()
+    conditions = entries[0].split('-')
     minimum = int(conditions[0])
     maximum = int(conditions[1])
-    character = lines[1].strip(':')
-    password = list(lines[2])
+    character = entries[1].strip(':')
+    password = list(entries[2])
 
     return minimum, maximum, character, password
 
