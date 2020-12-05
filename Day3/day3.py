@@ -31,6 +31,6 @@ def count_trees(wood, right_step, down_step):
 
 with open('input.txt') as file:
     lines_list = file.readlines()
-
+    print(count_trees(lines_list, 3, 1))
     print(count_trees(lines_list, 1, 1) * count_trees(lines_list, 3, 1) * count_trees(lines_list, 5, 1) * count_trees(
         lines_list, 7, 1) * count_trees(lines_list, 1, 2))
