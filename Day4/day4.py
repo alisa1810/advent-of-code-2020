@@ -87,7 +87,7 @@ with open('input.txt') as file:
                         "pid"]
 
     new_passport_list = reformat_input(lines_list)
-
     count_key_valids, key_valid_passports = count_valid_key_passports(new_passport_list, important_fields)
+
     print(count_key_valids)
     print(count_valid_entry_passports(key_valid_passports))
